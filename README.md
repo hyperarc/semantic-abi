@@ -1,1 +1,2 @@
 # semantic-abi
+A tool for converting the data in logs and function traces in a transaction for an ABI into a tabular format. This is accomplished by adding declarative semantics to the existing ABI through inline annotations added to the events and functions.
