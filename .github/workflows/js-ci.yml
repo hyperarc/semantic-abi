@@ -23,6 +23,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
+          cache-dependency-path: js/package-lock.json
       - run: cd js && npm ci && npm run test
       - name: Publish Test Report
         uses: mikepenz/action-junit-report@v3
