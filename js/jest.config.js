@@ -6,11 +6,12 @@ module.exports = {
         '^.+\\.ts$': 'ts-jest',
     },
     testRegex: "\\S+/test/\\S+.test\\.ts$",
+    moduleNameMapper: {
+        '^@test/(.*)$': '<rootDir>/test/$1'
+    },
     modulePaths: [
         "<rootDir>/src",
-        "<rootDir>",
         "<rootDir>/node_modules"
     ],
-    reporters: ["default", "jest-junit"],
-    moduleNameMapper: {}
+    reporters: ["default", "jest-junit"]
 };

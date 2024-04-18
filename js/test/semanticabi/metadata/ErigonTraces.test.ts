@@ -1,6 +1,6 @@
 import {ErigonTraces} from "semanticabi/metadata/ErigonTraces";
 import {EvmChain} from "semanticabi/metadata/EvmChain";
-import {FileUtil} from "test/common/FileUtil";
+import {FileUtil} from "@test/common/FileUtil";
 
 const fileUtil = new FileUtil('test/semanticabi/resources/blocks/');
 

@@ -3,17 +3,25 @@
         "outDir": "dist",
         "module": "commonjs",
         "target": "es6",
-        "lib": [
-            "es2019"
-        ],
+        "sourceMap": true,
+        "declaration": true,
         "resolveJsonModule": true,
         "esModuleInterop": true,
-        "baseUrl": "",
+        "baseUrl": "./",
         "paths": {
-            "*": [
-                "src/*",
-                "*"
-            ]
-        }
+            "@test/*": ["test/*"],
+            "*": ["src/*"],
+        },
+        "plugins": [
+            {
+                "transform": "typescript-transform-paths",
+                "exclude": [ "**/node_modules/**" ]
+            },
+            {
+                "transform": "typescript-transform-paths",
+                "afterDeclarations": true,
+                "exclude": [ "**/node_modules/**" ]
+            }
+        ]
     }
 }

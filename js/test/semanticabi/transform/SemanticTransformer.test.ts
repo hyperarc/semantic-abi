@@ -1,4 +1,4 @@
-import {FileUtil} from 'test/common/FileUtil';
+import {FileUtil} from '@test/common/FileUtil';
 import {SemanticTransformer} from 'semanticabi/transform/SemanticTransformer';
 import {EvmChain} from 'semanticabi/metadata/EvmChain';
 import {EthBlock} from 'semanticabi/metadata/EthBlock';

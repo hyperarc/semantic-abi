@@ -2,7 +2,7 @@ import {SubsequentStep} from 'semanticabi/transform/steps/SubsequentStep';
 import {Step} from 'semanticabi/transform/steps/Step';
 import {AbiSchema} from 'semanticabi/transform/steps/AbiSchema';
 import {SemanticAbiExecutionError} from 'semanticabi/abi/item/semantic/SemanticAbiExecutionError';
-import {FileUtil} from 'test/common/FileUtil';
+import {FileUtil} from '@test/common/FileUtil';
 import {SemanticAbi} from 'semanticabi/abi/SemanticAbi';
 import {EthBlock} from 'semanticabi/metadata/EthBlock';
 import {EvmChain} from 'semanticabi/metadata/EvmChain';
