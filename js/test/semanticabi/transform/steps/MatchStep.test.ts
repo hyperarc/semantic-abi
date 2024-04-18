@@ -1,4 +1,4 @@
-import {FileUtil} from 'test/common/FileUtil';
+import {FileUtil} from '@test/common/FileUtil';
 import {SemanticAbi} from 'semanticabi/abi/SemanticAbi';
 import {Step} from 'semanticabi/transform/steps/Step';
 import {InitStep} from 'semanticabi/transform/steps/InitStep';

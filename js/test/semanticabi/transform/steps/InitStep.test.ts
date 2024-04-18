@@ -2,7 +2,7 @@ import {SemanticAbi} from "semanticabi/abi/SemanticAbi";
 import {InitStep} from "semanticabi/transform/steps/InitStep";
 import {EthBlock} from "semanticabi/metadata/EthBlock";
 import {EvmChain} from "semanticabi/metadata/EvmChain";
-import {FileUtil} from "test/common/FileUtil";
+import {FileUtil} from "@test/common/FileUtil";
 
 const fileUtil = new FileUtil('test/semanticabi/resources/contracts/seaport');
 

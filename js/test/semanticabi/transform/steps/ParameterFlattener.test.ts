@@ -1,5 +1,5 @@
 import {SemanticAbi} from "semanticabi/abi/SemanticAbi";
-import {FileUtil} from "test/common/FileUtil";
+import {FileUtil} from "@test/common/FileUtil";
 import {DataType} from "semanticabi/transform/column/DataType";
 import {ParameterFlattener} from "semanticabi/transform/steps/ParameterFlattener";
 import {zip} from "common/Collections";
