@@ -1,5 +1,15 @@
-# semantic-abi
-A tool for converting the data in logs and function traces in a transaction for an ABI into a tabular format. This is accomplished by adding declarative semantics to the existing ABI through inline annotations added to the events and functions.
+# Semantic ABI
+One of the hardest parts to understanding on chain Web3 usage is just getting the data in the right shape for analysis — be it SQL or through clicks in HyperArc. Even after decoding logs and traces from their hex in transactions with their ABIs, you’re left with semi-structured JSON of arbitrary nesting due to struct and array fields.
+
+Annotate your ABIs and skip all the SQL and slow runtime joins with the Semantic ABI.
+
+## Try it out
+
+After [setup](https://github.com/hyperarc/semantic-abi/tree/main/python), try it out in python with:
+
+```shell
+python semanticabi/TransformBlock.py --block 1234567 --chain <chain name> --abi_path /path/to/abi.json --node_url <node url> --node_type <geth|erigon>
+```
 
 ## Specification
 A Semantic ABI is a JSON object that contains two parts, a metadata section and a list of events and functions from your ABI.
